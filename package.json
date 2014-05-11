@@ -13,7 +13,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "beefy index.js --live --open"
+    "start": "beefy index.js --live --open",
+    "test": "open http://localhost:9966/test.html; beefy index.js test.js --live"
   },
   "author": "",
   "license": "BSD-2-Clause"
