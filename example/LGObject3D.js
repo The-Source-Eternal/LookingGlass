@@ -60,14 +60,20 @@ module.exports = function( universe ) {
   // Public
   //
 
-  
+  LGObject3D.prototype.add = function( lgObject3D ) {
+
+    lgObject3D.set( 'parent', this.id )
+
+  }
 
   //
   // Private
   //
 
   LGObject3D.prototype._createCore = function() {
+    
     return new THREE.Object3D()
+    
   }
 
 

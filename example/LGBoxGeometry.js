@@ -21,8 +21,18 @@ module.exports = function( universe ) {
 
     this.on('size', function( size ) {
       
-      this.core.dispose()
-      this.core = new THREE.BoxGeometry( size, size, size )
+      // this.core.dispose()
+      // // https://github.com/mrdoob/three.js/wiki/Updates#geometries
+      // var geometry = new THREE.BoxGeometry( size, size, size )
+      // geometry.verticesNeedUpdate = true;
+      // geometry.elementsNeedUpdate = true;
+      // geometry.morphTargetsNeedUpdate = true;
+      // geometry.uvsNeedUpdate = true;
+      // geometry.normalsNeedUpdate = true;
+      // geometry.colorsNeedUpdate = true;
+      // geometry.tangentsNeedUpdate = true;
+
+      // this.core = geometry
 
     })
 
