@@ -24,8 +24,14 @@ function start() {
     universe.registerClass( LGObject3D )
 
     if (isServer) {
-      var testObj = new universe.classes.LookingGlassObject({id:'test'})
-      var testObj = new universe.classes.LGObject3D({id:'obj'})
+      var parent = new universe.classes.LGObject3D({id:'parent'})
+      var child = new universe.classes.LGObject3D({id:'child'})
+
+      setTimeout(function(){
+
+        child.set('parent', parent.id)
+
+      })
     }
 
   })

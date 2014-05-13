@@ -9,7 +9,8 @@
     "crdt": "~3.6.4",
     "rtc-data-stream": "~0.0.1",
     "three": "~0.66.2",
-    "rtc-quickconnect": "~1.0.3"
+    "rtc-quickconnect": "~1.0.3",
+    "extend": "~1.2.1"
   },
   "devDependencies": {},
   "scripts": {
