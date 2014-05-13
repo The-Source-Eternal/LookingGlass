@@ -11,6 +11,7 @@ module.exports = function( universe ) {
 
   function LGObject3D( args, skipInitialization, fromRemote ) {
 
+    // call SuperClass, but skip initialization
     LookingGlassObject.call( this, args, true, fromRemote )
 
     // define properties
@@ -19,8 +20,6 @@ module.exports = function( universe ) {
       rotation:  { type: 'vector3',    default: [0,0,0],   reliable: false, },
       parent:    { type: 'string',     default: null,                       },
     })
-
-    this.core = new THREE.Object3D()
 
     this.on('position', function( position ) {
       var vector = this.core.position
@@ -66,6 +65,10 @@ module.exports = function( universe ) {
   //
   // Private
   //
+
+  LGObject3D.prototype._createCore = function() {
+    return new THREE.Object3D()
+  }
 
 
   return LGObject3D
