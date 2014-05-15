@@ -31,9 +31,8 @@ function start() {
     peerConnection.emitUnreliable = peerConnection.emit
     
     universe = new LookingGlass( peerConnection )
-    // note - you must manually register the whole class hierarchy
-    universe.registerClass( LookingGlassObject )
     
+    // note - you must manually register the whole class hierarchy
     // Material
     universe.registerClass( LGMaterial )
     universe.registerClass( LGMeshBasicMaterial )
