@@ -2,7 +2,7 @@
   "name": "looking-glass",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/LookingGlass.js",
   "dependencies": {
     "duplex-emitter": "~2.1.2",
     "hat": "~0.0.3",
